@@ -1,11 +1,11 @@
-# Image & PDF OCR to Text (Japanese + English)
+# Japanese OCR: Image, PDF, Receipt & Invoice to Text
 
 [![Run on Apify](https://apify.com/ext/run-on-apify.png)](https://apify.com/mirumiru_miru17/image-pdf-ocr-japanese)
 
 **Run it in the cloud with no setup: [apify.com/mirumiru_miru17/image-pdf-ocr-japanese](https://apify.com/mirumiru_miru17/image-pdf-ocr-japanese)**
 
 
-Turn images and scanned PDFs into text. Paste direct links to your files and get the **full text**, **text per page** and an **OCR confidence score** for each file, plus a ready-to-download TXT file.
+Japanese OCR for images, scanned PDFs, receipts and invoices. Turn them into text. Paste direct links to your files and get the **full text**, **text per page** and an **OCR confidence score** for each file, plus a ready-to-download TXT file.
 
 Built for **Japanese documents** (invoices, receipts, business cards, contracts, forms, vertical text) and works with English, Chinese, Korean, German, French and Spanish too.
 
