@@ -1,0 +1,13 @@
+{
+  "title": "OCR input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "fileUrls": { "title": "Image or PDF URLs", "type": "array", "editor": "stringList", "description": "Direct links to images (PNG, JPG, WEBP, TIFF, BMP) or PDFs. Up to 100 MB each.", "prefill": ["https://raw.githubusercontent.com/myunsd0417-creator/seo-ai-readiness-audit/main/samples/scanned-invoice-ja.pdf", "https://raw.githubusercontent.com/myunsd0417-creator/seo-ai-readiness-audit/main/samples/receipt-en.png"] },
+    "language": { "title": "Language", "type": "string", "editor": "select", "enum": ["jpn+eng","jpn","eng","jpn_vert+jpn","chi_sim+eng","chi_tra+eng","kor+eng","deu+eng","fra+eng","spa+eng"], "enumTitles": ["Japanese + English 日本語＋英語","Japanese 日本語","English","Japanese vertical 縦書き","Chinese (Simplified) + English","Chinese (Traditional) + English","Korean + English","German + English","French + English","Spanish + English"], "default": "jpn+eng", "description": "Language of the text in your documents." },
+    "pdfMode": { "title": "PDF mode", "type": "string", "editor": "select", "enum": ["auto","ocr"], "enumTitles": ["Auto: use the PDF's own text when it has one, OCR scanned pages","Always OCR every page"], "default": "auto", "description": "Auto is faster and exact for digital PDFs." },
+    "maxPagesPerFile": { "title": "Max pages per file", "type": "integer", "minimum": 1, "maximum": 1000, "default": 50, "description": "Pages beyond this are skipped and not charged." },
+    "maxFiles": { "title": "Max files", "type": "integer", "minimum": 1, "maximum": 500, "default": 50, "description": "Safety limit on files per run." }
+  },
+  "required": ["fileUrls"]
+}

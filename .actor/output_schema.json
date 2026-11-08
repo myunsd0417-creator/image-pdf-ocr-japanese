@@ -1,0 +1,8 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "OCR results",
+  "properties": {
+    "results": { "type": "string", "title": "Text per file", "description": "Full text, per-page text, method and confidence for each file.", "template": "{{links.apiDefaultDatasetUrl}}/items" },
+    "textFiles": { "type": "string", "title": "Plain text files", "description": "One TXT file per input file (TEXT-1.txt, ...).", "template": "{{links.apiDefaultKeyValueStoreUrl}}/keys" }
+  }
+}

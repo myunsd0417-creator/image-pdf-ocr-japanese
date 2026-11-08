@@ -1,0 +1,13 @@
+{
+  "actorSpecification": 1,
+  "name": "image-pdf-ocr-japanese",
+  "title": "Image & PDF OCR to Text (Japanese + English)",
+  "description": "Extract text from images and scanned PDFs with OCR. Strong Japanese support (horizontal and vertical) plus English, Chinese, Korean and European languages. Digital PDFs are read exactly. Per-page text and confidence, TXT output. No API key.",
+  "version": "0.1",
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "readme": "./README.md",
+  "dockerfile": "./Dockerfile",
+  "defaultMemoryMbytes": 2048,
+  "storages": { "dataset": { "actorSpecification": 1, "views": { "overview": { "title": "Results", "transformation": { "fields": ["url","type","pageCount","averageConfidence","text","error"] }, "display": { "component": "table" } } } } }
+}
